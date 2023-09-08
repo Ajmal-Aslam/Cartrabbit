@@ -1,0 +1,1018 @@
+{
+	"info": {
+		"_postman_id": "fd28a282-feba-45e4-9539-48d728ed02f5",
+		"name": "catrabbit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24530156"
+	},
+	"item": [
+		{
+			"name": "Houseowner",
+			"item": [
+				{
+					"name": "create/signin owner",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\":\"rathinavel@gmail.com\",\r\n  \"mobileNumber\":\"9293949511\",\r\n  \"password\":\"rathinavel\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/houseowner",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"houseowner"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14-zkTN19HSrn3jwuOyKup9zA0yzXo\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jul 2023 09:02:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "created Successfully"
+						}
+					]
+				},
+				{
+					"name": "reset password",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "reset password",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"password\":\"MAYIULSAMY\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/houseowner/64a2d86ada1e2901c2c62624/reset-password",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"houseowner",
+										"64a2d86ada1e2901c2c62624",
+										"reset-password"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "28"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c-p01fvUdrPf6tUI+nM/WdBk5j2ps\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jul 2023 09:37:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Your password has been reset"
+						}
+					]
+				},
+				{
+					"name": "update owners",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"mobileNumber\":\"9090989098\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/houseowner/64a2d0dcb395c0a1ff78921e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"houseowner",
+										"64a2d0dcb395c0a1ff78921e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "92"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5c-ShutYOH895Hqw6kT0TGoGJBY4Q0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jul 2023 14:57:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"acknowledged\": true,\n    \"modifiedCount\": 0,\n    \"upsertedId\": null,\n    \"upsertedCount\": 0,\n    \"matchedCount\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"email\":\"nadarsim@gmail.com\",\r\n\"password\":\"nadarsim\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/houseowner/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"houseowner",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "518"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"206-YIn7v5XT18KhaOXuFxeLoYmQ0Tw\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jul 2023 09:32:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"result\": {\n        \"UserDetails\": [\n            {\n                \"_id\": \"64a2d0dcb395c0a1ff78921e\",\n                \"email\": \"nadarsim@gmail.com\",\n                \"mobileNumber\": \"9090989098\",\n                \"password\": \"U2FsdGVkX190bSvrSvDzbZMQuXGDGsL8AMj3Gr8nDJw=\",\n                \"__v\": 0\n            }\n        ],\n        \"token\": \"eyJhbGciOiJIUzI1NiJ9.W3siX2lkIjoiNjRhMmQwZGNiMzk1YzBhMWZmNzg5MjFlIiwiZW1haWwiOiJuYWRhcnNpbUBnbWFpbC5jb20iLCJtb2JpbGVOdW1iZXIiOiI5MDkwOTg5MDk4IiwicGFzc3dvcmQiOiJVMkZzZEdWa1gxOTBiU3ZyU3ZEemJaTVF1WEdER3NMOEFNajNHcjhuREp3PSIsIl9fdiI6MH1d.KpWp_H6G3oi9EOAclnS1HAcXB0KwTsoBZaaQgCaaFlQ\"\n    },\n    \"message\": \"Login Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get ownerslist",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/houseowner",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"houseowner"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "478"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1de-OEcSgbA/QSapcKqtRG7ZC7TQyzY\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 03 Jul 2023 14:31:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"64a2d0dcb395c0a1ff78921e\",\n        \"email\": \"nadarsim@gmail.com\",\n        \"mobileNumber\": \"9098909812\",\n        \"password\": \"U2FsdGVkX190bSvrSvDzbZMQuXGDGsL8AMj3Gr8nDJw=\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64a2d855da1e2901c2c62622\",\n        \"email\": \"mayiulsamy@gmail.com\",\n        \"mobileNumber\": \"9876787672\",\n        \"password\": \"U2FsdGVkX19edIfltk9c2MFOohaRYTInREyV3Zw882Y=\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64a2d86ada1e2901c2c62624\",\n        \"email\": \"Annadurai@gmail.com\",\n        \"mobileNumber\": \"9876787642\",\n        \"password\": \"U2FsdGVkX1+zYGUIuQ/3K7YIU6sIaJbLoihT49RKWpE=\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "signin customer",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\":\"pandian@gmail.com\",\r\n  \"mobileNumber\":\"9998778767\",\r\n  \"password\":\"pandian\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/customer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"customer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14-zkTN19HSrn3jwuOyKup9zA0yzXo\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jul 2023 09:45:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "created Successfully"
+						}
+					]
+				},
+				{
+					"name": "customers list",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "all customer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/customer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"customer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "629"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"275-I6W/+edTU5ixpCE2Zu+uyQYCas4\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jul 2023 09:46:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"64a2da6e5c6918ad818e8f40\",\n        \"email\": \"krishna@gmail.com\",\n        \"mobileNumber\": \"9876788642\",\n        \"password\": \"U2FsdGVkX1+U2Fc5UNp87tmPFCZobKi6GlNdAlo6XYE=\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64a2da845c6918ad818e8f42\",\n        \"email\": \"Thiyagu@gmail.com\",\n        \"mobileNumber\": \"9870788642\",\n        \"password\": \"U2FsdGVkX19uBqjh+MYFSahxi6IeeTq6dDCQl5bTQhE=\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64a2dae65c6918ad818e8f44\",\n        \"email\": \"Moorthy@gmail.com\",\n        \"mobileNumber\": \"9870778642\",\n        \"password\": \"U2FsdGVkX183yznkP6fUVPm7itLLiy+S+tBjsrJtmhE=\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64a53b9fd613845d502362a6\",\n        \"email\": \"pandian@gmail.com\",\n        \"mobileNumber\": \"9998778767\",\n        \"password\": \"U2FsdGVkX1+FFtvNVKSDeazMOY1Xkji0CdzerC0SjmA=\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "one customer",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/customer/64a2da845c6918ad818e8f42",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"customer",
+										"64a2da845c6918ad818e8f42"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "158"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9e-OQUTw5yvj59LfL47Jqm04YagHPg\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jul 2023 10:03:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"64a2da845c6918ad818e8f42\",\n        \"email\": \"Thiyagu@gmail.com\",\n        \"mobileNumber\": \"9870788642\",\n        \"password\": \"U2FsdGVkX19uBqjh+MYFSahxi6IeeTq6dDCQl5bTQhE=\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "reset password",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "reset password",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"password\":\"MOORTHY\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/customer/64a2dae65c6918ad818e8f44/reset-password",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"customer",
+										"64a2dae65c6918ad818e8f44",
+										"reset-password"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "28"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c-p01fvUdrPf6tUI+nM/WdBk5j2ps\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jul 2023 10:05:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Your password has been reset"
+						}
+					]
+				},
+				{
+					"name": "update customers",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "update customers",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"mobileNumber\":\"9999999999\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/customer/64a2da845c6918ad818e8f42",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"customer",
+										"64a2da845c6918ad818e8f42"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "92"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5c-ShutYOH895Hqw6kT0TGoGJBY4Q0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jul 2023 10:12:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"acknowledged\": true,\n    \"modifiedCount\": 0,\n    \"upsertedId\": null,\n    \"upsertedCount\": 0,\n    \"matchedCount\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "login Customers",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "login Customers",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"email\":\"Moorthy@gmail.com\",\r\n\"password\":\"MOORTHY\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/customer/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"customer",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "516"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"204-5QaPVnvKW29N2I53QwyKhBaC6io\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jul 2023 10:18:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"result\": {\n        \"UserDetails\": [\n            {\n                \"_id\": \"64a2dae65c6918ad818e8f44\",\n                \"email\": \"Moorthy@gmail.com\",\n                \"mobileNumber\": \"9870778642\",\n                \"password\": \"U2FsdGVkX1+feMRGk9HRZuzDDSCwXO1Je3rZ7lRwdEA=\",\n                \"__v\": 0\n            }\n        ],\n        \"token\": \"eyJhbGciOiJIUzI1NiJ9.W3siX2lkIjoiNjRhMmRhZTY1YzY5MThhZDgxOGU4ZjQ0IiwiZW1haWwiOiJNb29ydGh5QGdtYWlsLmNvbSIsIm1vYmlsZU51bWJlciI6Ijk4NzA3Nzg2NDIiLCJwYXNzd29yZCI6IlUyRnNkR1ZrWDErZmVNUkdrOUhSWnV6RERTQ3dYTzFKZTNyWjdsUndkRUE9IiwiX192IjowfV0.kZROJ97Og3Bg-qrd-EwbkR6-nFQ_pIbDcwYxDmQmSIQ\"\n    },\n    \"message\": \"Login Successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Property",
+			"item": [
+				{
+					"name": "create properties",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"Name\": \"CUTE ILLAM\",\r\n\"Owner\":[\"64a2d86ada1e2901c2c62624\"],\r\n\"MinBookingPeriod\":3,\r\n\"MaxBookingPeriod\":10\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/property",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"property"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14-eU0quLWbxkUmWZD3tJkuqpnNTu8\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jul 2023 12:16:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "created sucessfulley"
+						}
+					]
+				},
+				{
+					"name": "Get all properties",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/property",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"property"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "676"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a4-2uvCQL8Aq5z4gd9MPDwNgdaAZ/A\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jul 2023 12:31:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"64a55d67ca944f612c9d81ae\",\n        \"Name\": \"ABC VILLAS\",\n        \"Owner\": {\n            \"_id\": \"64a2d0dcb395c0a1ff78921e\",\n            \"name\": \"Nadarsim\"\n        },\n        \"MinBookingPeriod\": 3,\n        \"MaxBookingPeriod\": 15,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64a55e40ca944f612c9d81b0\",\n        \"Name\": \"MAYIL VILLAS\",\n        \"Owner\": {\n            \"_id\": \"64a2d855da1e2901c2c62622\",\n            \"name\": \"Mayilsamy\"\n        },\n        \"MinBookingPeriod\": 5,\n        \"MaxBookingPeriod\": 16,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64a55e63ca944f612c9d81b2\",\n        \"Name\": \"ROSE VILLAS\",\n        \"Owner\": {\n            \"_id\": \"64a5319346458c16c9d2ffcf\",\n            \"name\": \"Rathinavel\"\n        },\n        \"MinBookingPeriod\": 2,\n        \"MaxBookingPeriod\": 10,\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"64a55f3aca944f612c9d81b4\",\n        \"Name\": \"CUTE ILLAM\",\n        \"Owner\": {\n            \"_id\": \"64a2d86ada1e2901c2c62624\",\n            \"name\": \"Annadurai\"\n        },\n        \"MinBookingPeriod\": 3,\n        \"MaxBookingPeriod\": 10,\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "update properties",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rooms",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bookings",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"customer\":[\"64a2dae65c6918ad818e8f44\"],\r\n\"startDate\":\"2023-07-10\",\r\n\"endDate\":\"2023-07-15\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/booking",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"booking"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "20"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14-eU0quLWbxkUmWZD3tJkuqpnNTu8\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 05 Jul 2023 15:03:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "created sucessfulley"
+						}
+					]
+				}
+			]
+		}
+	]
+}
